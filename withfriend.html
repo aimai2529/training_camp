@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ress.css">
-    <link rel="stylesheet" href="css/log.css">
-    <title>フレンドリスト</title>
+    <link rel="stylesheet" href="css/withfriend.css">
+    <title>フレンドとの記録</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
@@ -15,14 +15,18 @@
 <body>
     <header>
         <h1><img src="img/logo.png" alt=""></h1>
-        <p>みんなの記録</p>
+        <p>フレンドとの記録</p>
     </header>
 
     <main>
         <div class="inner">
-            <div class="select">
-                <a href="log.html"><button>自分</button></a>
-                <a href="#"><button class="active">フレンド</button></a>
+            <div class="friendSelect">
+                <select name="friend" id="friendSelect">
+                    <option value="">フレンドを選択</option>
+                    <option value="airi">ふじた　あいり</option>
+                    <option value="kanaya">かなや　かいせい</option>
+                    <option value="nakahira">なかひら　しゅんた</option>
+                </select>
             </div>
 
             <div class="sort">
@@ -35,14 +39,17 @@
 
             <ul>
                 <li>
-                    <div class="images"><img src="./img/misokastu.jpg" alt=""></div>
+                    <div class="images">
+                        <img src="./img/addPhoto.png" alt="">
+                        <img class="under" src="./img/noPhoto.png" alt="">
+                    </div>
                     <div class="text">
                         <h3>矢場とん</h3>
                         <div class="info">
                             <p class="place">名古屋</p>
                             <p class="date">3/23</p>
                         </div>
-                        <p class="who">ふじたあいり</p>
+                        <p class="who">ふじたあいりと</p>
                         <p class="comment">味噌カツが美味しい！駅から近くて便利！</p>
                     </div>
                     <div class="favorite">
@@ -51,36 +58,24 @@
                 </li>
 
                 <li>
-                    <div class="images"><img src="./img/ra-men.jpeg" alt=""></div>
+                    <div class="images">
+                        <img src="./img/friendImg1.png" alt="">
+                        <img class="under" src="./img/friendImg2.png" alt="">
+                    </div>
                     <div class="text">
-                        <h3>55ラーメン</h3>
+                        <h3>磯丸水産</h3>
                         <div class="info">
                             <p class="place">名古屋</p>
-                            <p class="date">3/14</p>
+                            <p class="date">3/23</p>
                         </div>
-                        <p class="who">かなやかいせい</p>
-                        <p class="comment">ガッツリラーメンが最高。にんにくになれる。</p>
+                        <p class="who">ふじたあいりと</p>
+                        <p class="comment">蟹味噌が美味しい。ポテトにつけて食べれば最高。</p>
                     </div>
                     <div class="favorite">
                         <img src="./img/Star.png" alt="お気に入り">
                     </div>
                 </li>
 
-                <li>
-                    <div class="images"><img src="./img/kishimn.jpeg" alt=""></div>
-                    <div class="text">
-                        <h3>驛釜きしめん</h3>
-                        <div class="info">
-                            <p class="place">名古屋</p>
-                            <p class="date">3/1</p>
-                        </div>
-                        <p class="who">ふじたあいり</p>
-                        <p class="comment">量が多い。温玉は正義。</p>
-                    </div>
-                    <div class="favorite">
-                        <img src="./img/Star.png" alt="お気に入り">
-                    </div>
-                </li>
 
             </ul>
         </div>
