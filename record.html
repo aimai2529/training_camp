@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/record.css">
+    <title>グルメ登録</title>
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo.png" alt="ロゴ"></h1>
+        <p>グルメ登録</p>
+    </header>
+
+    <main>
+        <div class="recordWrap">
+            <div class="record">
+                <div id="pictureUpload" class="pictureAddition">
+                    <p id="plusText"><span id="plusSize">＋</span><br>写真を追加</p>
+                    <img id="previewImage" style="display: none;">
+                </div>
+                <input type="file" id="imageInput" accept="image/*" style="display: none;"> 
+
+                <div class="recordText">
+                    <p>店名：</p>
+                    <input type="text">
+                </div>
+                <div class="recordText">
+                    <p>場所：</p>
+                    <input type="text">
+                </div>
+                <div class="recordText">
+                    <p>日付：</p>
+                    <input type="date">
+                </div>
+                <div class="recordText">
+                    <p>誰と：</p>
+                    <input type="text">
+                </div>
+                <p>詳細</p>
+                <textarea class="details" placeholder="〇〇がおすすめ！"></textarea>
+                <button class="btn">決定</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="friendList.html"><img src="img/friendIcon.png" alt="フレンドアイコン"></a>
+        <a href="index.html"><img src="img/homeIcon.png" alt="ホームアイコン"></a>
+        <a href=""><img src="img/logIcon.png" alt="ログアイコン"></a>
+    </footer>
+
+    <script src="record.js"></script>
+</body>
+</html>
