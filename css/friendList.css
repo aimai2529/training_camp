@@ -13,14 +13,22 @@ header{
     width: 100%;
     height: 60px;
     color: #fff;
+    text-align: center;
+    line-height: 60px;
+
 }
 
 main{
     margin-top: 60px;
+    padding-bottom: 100px;
+}
+
+.btnWrap{
+    background: #FFF4D9;
+    padding: 40px 0;
 }
 
 .additionBtn{
-    color: #fff;
     background: #FF9A42;
     width: 350px;
     height: 46px;
@@ -28,8 +36,84 @@ main{
     text-align: center;
     line-height: 46px;
     border-radius: 40px;
-    margin: 20px auto;
+    display: block;
+    margin: 0 auto;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
 }
+
+.friendWrap{
+    margin-top: 25px;
+    /* padding-bottom: 25px; */
+    border-bottom: #651608 solid 1px;
+}
+
+.friend{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+    img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.friendComment{
+    color: #651608;
+    margin-left: 30px;
+    line-height: 30px;
+
+    .txtBold{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .commentTxt{
+        display: flex;
+        margin-top: 10px;
+        p{
+            font-size: 12px;
+            background: #FF9A42;
+            width: 80px;
+            height: 25px;
+            color: #fff;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 40px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.friendWrap a{
+    text-decoration: none;
+    color: #651608;
+    font-size: 14px;
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.inviteBtn{
+    font-size: 16px;
+    color: #A65610;
+    background: #fff;
+    border: #FF9A42 solid 4px;
+    border-radius: 6px;
+    width: 350px;
+    height: 46px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    margin: 15px auto;
+}
+
+
 
 
 
