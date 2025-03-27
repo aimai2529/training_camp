@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+.header {
+    background-color: #FFD35B;
+    padding: 16px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer {
+    background-color: #FFD35B;
+    padding: 16px 50px 28px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
