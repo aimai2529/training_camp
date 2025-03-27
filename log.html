@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/log.css">
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1><img src="img/logo.png" alt="ロゴ"></h1>
+        <p>みんなの記録</p>
+    </header>
+
+    <main>
+        <div class="inner">
+            <div class="select">
+                <a href="#"><button class="active">自分</button></a>
+                <a href="log-friend.html"><button>フレンド</button></a>
+            </div>
+
+            <div class="sort">
+                <select name="order" id="orderSelect">
+                    <option value="new">新しい順</option>
+                    <option value="old">古い順</option>
+                </select>
+            </div>
+
+            <div class="logWrap">
+                <img class="star" src="img/star.png" alt="お気に入りボタン">
+                <div class="logImg">
+                    <img id="previewImage" style="display: none;">
+                </div>
+                <div class="logText">
+                    <h2><span id="displayShopName"></span></h2>
+                    <div class="flex">
+                        <p><img src="img/mapIcon.png" alt="マップアイコン"></img> <span id="displayLocation"></span></p>
+                        <p><img src="img/timeIcon.png" alt="タイムアイコン"><span id="displayDate"></span></p>
+                    </div>
+                    <p><img src="img/userIcon.png" alt="ユーザーアイコン"> <span id="displayWithWhom"></span></p>
+                    <div class="flex">
+                        <img src="img/commentIcon.png" alt="">
+                        <p id="displayDetails"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="friendList.html"><img src="img/friendIcon.png" alt="フレンドアイコン"></a>
+        <a href="index.html"><img src="img/homeIcon.png" alt="ホームアイコン"></a>
+        <a href="log.html"><img src="img/logIcon.png" alt="ログアイコン"></a>
+    </footer>
+
+    <script src="log.js"></script>
+</body>
+</html>

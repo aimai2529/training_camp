@@ -1,26 +1,52 @@
-const pictureUpload = document.getElementById("pictureUpload"); // クリックするエリア
-const imageInput = document.getElementById("imageInput"); // 画像選択ボタン（非表示）
-const previewImage = document.getElementById("previewImage"); // プレビュー表示用の画像
-const plusText = document.getElementById("plusText"); // 「＋写真を追加」のテキスト
+// document.getElementById("saveBtn").addEventListener("click", function() {
+//     // 入力されたデータを取得
+//     const shopName = document.getElementById("shopName").value;
+//     const location = document.getElementById("location").value;
+//     const date = document.getElementById("date").value;
+//     const withWhom = document.getElementById("withWhom").value;
+//     const details = document.getElementById("details").value;
 
-// **クリックで画像選択を開く**
-pictureUpload.addEventListener("click", () => {
-    imageInput.click();
+//     // ローカルストレージに保存
+//     localStorage.setItem("shopName", shopName);
+//     localStorage.setItem("location", location);
+//     localStorage.setItem("date", date);
+//     localStorage.setItem("withWhom", withWhom);
+//     localStorage.setItem("details", details);
+
+//     // 次のページへ移動
+//     window.location.href = "log.html";
+// });
+
+document.getElementById("pictureUpload").addEventListener("click", function() {
+    document.getElementById("imageInput").click();
 });
 
-// **画像を選んだらプレビューを表示**
-imageInput.addEventListener("change", (event) => {
-    const file = event.target.files[0]; // 選択したファイルを取得
+document.getElementById("imageInput").addEventListener("change", function(event) {
+    const file = event.target.files[0];
     if (file) {
-        const reader = new FileReader(); // ファイルを読み込む
-        reader.onload = (e) => {
-            previewImage.src = e.target.result; // 画像をセット
-            previewImage.style.display = "block"; // 画像を表示
-            previewImage.style.width = "100%"; // 枠いっぱいにする
-            previewImage.style.height = "100%";
-            previewImage.style.objectFit = "cover"; // 画像をフィットさせる
-            plusText.style.display = "none"; // 「＋写真を追加」を隠す
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const imageData = e.target.result;
+            localStorage.setItem("uploadedImage", imageData); // Base64データを保存
+            document.getElementById("previewImage").src = imageData;
+            document.getElementById("previewImage").style.display = "block";
         };
-        reader.readAsDataURL(file); // 画像を読み込む
+        reader.readAsDataURL(file);
     }
+});
+
+document.getElementById("saveBtn").addEventListener("click", function() {
+    const shopName = document.getElementById("shopName").value;
+    const location = document.getElementById("location").value;
+    const date = document.getElementById("date").value;
+    const withWhom = document.getElementById("withWhom").value;
+    const details = document.getElementById("details").value;
+
+    localStorage.setItem("shopName", shopName);
+    localStorage.setItem("location", location);
+    localStorage.setItem("date", date);
+    localStorage.setItem("withWhom", withWhom);
+    localStorage.setItem("details", details);
+
+    window.location.href = "log.html";
 });
