@@ -1,0 +1,142 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #FFF4D9;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #FFD35B;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 24px;
+}
+
+/*-------- main ----------*/
+
+main {
+    background: #fff;
+    width: 85%;
+    border: 2px solid #FF9A42;
+    margin: 30px auto 0;
+    padding: 0 30px;
+}
+
+.recordWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.record {
+    font-size: 15px;
+    width: 100%;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    border: #BBBBBB 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    padding: 8px;
+}
+
+.pictureAddition {
+    position: relative;
+    margin: 25px auto;
+    text-align: center;
+    color: #BBBBBB;
+    font-size: 12px;
+    height: 160px;
+    /* border: #BBBBBB solid 3px; */
+    /* padding-top: 25px; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.recordText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 15px;
+}
+
+.recordText p {
+    margin-right: 10px; 
+    width: 60px; 
+}
+
+input, textarea {
+    margin-bottom: 0;
+    border: #BBBBBB 1px solid;
+    border-radius: 3px;
+    width: calc(100% - 70px);
+    padding: 8px;
+}
+
+.details {
+    height: 105px;
+    border: #BBBBBB 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.btn {
+    color: #fff;
+    background: #FF9A42;
+    border-radius: 30px;
+    text-align: center;
+    width: 220px;
+    height: 35px;
+    display: block;
+    margin: 0 auto  15px;
+}
+
+/*-------- footer ----------*/
+
+footer {
+    background: #FFD35B;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+footer a:last-child img {
+    width: 45px;
+    height: 40px;
+}
