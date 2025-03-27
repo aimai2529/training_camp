@@ -10,6 +10,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 999;
     top: 0px;
     background: #FFD35B;
     width: 100%;
@@ -44,14 +45,17 @@ main {
         margin-bottom: 10px;
     }
 
-
     .charactorImg {
-        display: block;
         margin-right: auto;
         margin-left: auto;
         padding: 0 35px 90px 67px;
         background: url(../img/kirikabu.png) no-repeat center bottom;
-        flex: 1;
+        text-align: center;
+
+
+        img {
+            animation: pyoko 1.5s infinite;
+        }
     }
 
     .comment {
@@ -59,6 +63,19 @@ main {
         height: 110px;
         background: url(../img/Union.png) no-repeat left top/ contain;
         padding: 15px 12px 10px 14px;
+    }
+}
+
+@keyframes pyoko {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-10px);
     }
 }
 
@@ -75,6 +92,8 @@ main {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: #FF9A42 1px solid;
 
         img {
             width: 100px;
@@ -96,6 +115,11 @@ main {
 
         ;
     }
+}
+
+li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 footer {
