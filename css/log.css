@@ -60,14 +60,14 @@ main {
         width: 124px;
         padding: 14px 0;
         border-radius: 50px;
-        background-color: #fff;
-        color: #FF9A42;
-        border: #FF9A42 2px solid;
+        color: #fff;
+        background-color: #FF9A42;
     }
 
     button.active {
-        color: #fff;
-        background-color: #FF9A42;
+        background-color: #fff;
+        color: #FF9A42;
+        border: #FF9A42 2px solid;
     }
 }
 
