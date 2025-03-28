@@ -5,6 +5,7 @@ html {
 body {
     height: 100svh;
     font-family: "Zen Maru Gothic", serif;
+    background-color: #FFF4D9;
     width: 390px;
     margin-left: auto;
     margin-right: auto;
@@ -42,12 +43,16 @@ header p {
 }
 
 main {
-    padding-top: 108px;
     padding-bottom: 110px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
 
     .inner {
         margin: 0 20px;
-    }
+    padding-top: 108px;
+    padding-bottom: 110px;
+    background-color: #FFF4D9;
 }
 
 .select {
@@ -63,6 +68,12 @@ main {
         width: 124px;
         padding: 14px 0;
         border-radius: 50px;
+        background-color: #fff;
+        color: #FF9A42;
+        border: #FF9A42 2px solid;
+    }
+
+    button.active {
         color: #fff;
         background-color: #FF9A42;
     }
@@ -176,7 +187,6 @@ li {
         }
 
     }
-
 }
 
 
