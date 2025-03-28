@@ -18,6 +18,7 @@
         <p>グルメ登録</p>
     </header>
 
+    
     <main>
         <div class="recordWrap">
             <div class="record">
@@ -29,23 +30,23 @@
 
                 <div class="recordText">
                     <p>店名：</p>
-                    <input type="text">
+                    <input type="text" id="shopName">
                 </div>
                 <div class="recordText">
                     <p>場所：</p>
-                    <input type="text">
+                    <input type="text" id="location">
                 </div>
                 <div class="recordText">
                     <p>日付：</p>
-                    <input type="date">
+                    <input type="date" id="date">
                 </div>
                 <div class="recordText">
                     <p>誰と：</p>
-                    <input type="text">
+                    <input type="text" id="withWhom">
                 </div>
                 <p>詳細</p>
-                <textarea class="details" placeholder="〇〇がおすすめ！"></textarea>
-                <button class="btn">決定</button>
+                <textarea class="details" id="details" placeholder="〇〇がおすすめ！"></textarea>
+                <button class="btn" id="saveBtn">決定</button>
             </div>
         </div>
     </main>
@@ -53,7 +54,7 @@
     <footer>
         <a href="friendList.html"><img src="img/friendIcon.png" alt="フレンドアイコン"></a>
         <a href="index.html"><img src="img/homeIcon.png" alt="ホームアイコン"></a>
-        <a href=""><img src="img/logIcon.png" alt="ログアイコン"></a>
+        <a href="log.html"><img src="img/logIcon.png" alt="ログアイコン"></a>
     </footer>
 
     <script src="record.js"></script>

@@ -7,3 +7,4 @@ inviteBtn.forEach(button => {
         button.style.color = "#fff"
     };
 });
+

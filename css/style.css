@@ -13,10 +13,13 @@ body {
 }
 
 header {
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    line-height: 60px;
     background: #FFD35B;
     width: 100%;
     height: 70px;
-    color: #fff;
     text-align: center;
     display: flex;
     align-items: center;

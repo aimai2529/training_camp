@@ -1,5 +1,6 @@
 const btn = document.querySelectorAll(".btn");
 
+
 btn.forEach(button => {
     button.onclick = () => {
         button.innerText = "フレンドに送信しました！";
