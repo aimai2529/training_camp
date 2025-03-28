@@ -172,10 +172,10 @@ main {
         color: #fff;
         background-color: #FF9A42;
         text-align: center;
-        background-image: url(../img/friendIcon.png), url(../img/Polygon2.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position: left 15px center, right 25px center;
-        background-size: 30px 30px, 10px 10px;
+        background-image: url(../img/Polygon2.png);
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 10px 10px;
     }
 }
 
