@@ -1,22 +1,3 @@
-// document.getElementById("saveBtn").addEventListener("click", function() {
-//     // 入力されたデータを取得
-//     const shopName = document.getElementById("shopName").value;
-//     const location = document.getElementById("location").value;
-//     const date = document.getElementById("date").value;
-//     const withWhom = document.getElementById("withWhom").value;
-//     const details = document.getElementById("details").value;
-
-//     // ローカルストレージに保存
-//     localStorage.setItem("shopName", shopName);
-//     localStorage.setItem("location", location);
-//     localStorage.setItem("date", date);
-//     localStorage.setItem("withWhom", withWhom);
-//     localStorage.setItem("details", details);
-
-//     // 次のページへ移動
-//     window.location.href = "log.html";
-// });
-
 document.getElementById("pictureUpload").addEventListener("click", function() {
     document.getElementById("imageInput").click();
 });
@@ -34,6 +15,7 @@ document.getElementById("imageInput").addEventListener("change", function(event)
         reader.readAsDataURL(file);
     }
 });
+
 
 document.getElementById("saveBtn").addEventListener("click", function() {
     const shopName = document.getElementById("shopName").value;

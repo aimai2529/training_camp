@@ -4,7 +4,7 @@ document.getElementById("displayShopName").textContent = localStorage.getItem("s
     document.getElementById("displayWithWhom").textContent = localStorage.getItem("withWhom") || "未記入";
     document.getElementById("displayDetails").textContent = localStorage.getItem("details") || "未記入";
 
-    // 画像データを取得して表示
+    
     const storedImage = localStorage.getItem("uploadedImage");
     if (storedImage) {
         document.getElementById("previewImage").src = storedImage;
