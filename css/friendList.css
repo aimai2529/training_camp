@@ -1,10 +1,16 @@
-html{
+html {
     font-size: 62.5%;
 }
 
 
-body{
+body {
     height: 100svh;
+    font-family: "Zen Maru Gothic", serif;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF4D9;
+    color: #651608;
 }
 
 header {
@@ -17,6 +23,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
 }
 
 header h1 {
@@ -30,19 +40,20 @@ header p {
     transform: translateX(-50%);
     margin: 0;
     font-size: 24px;
+    font-weight: bold;
 }
 
-main{
-    /* margin-top: 60px; */
-    padding-bottom: 100px;
+main {
+    padding-top: 60px;
+    padding-bottom: 110px;
 }
 
-.btnWrap{
+.btnWrap {
     background: #FFF4D9;
     padding: 40px 0;
 }
 
-.additionBtn{
+.additionBtn {
     background: #FF9A42;
     width: 350px;
     height: 46px;
@@ -52,45 +63,47 @@ main{
     border-radius: 40px;
     display: block;
     margin: 0 auto;
-    a{
+
+    a {
         text-decoration: none;
         color: #fff;
     }
 }
 
-.friendWrap{
+.friendWrap {
     margin-top: 25px;
     /* padding-bottom: 25px; */
     border-bottom: #651608 solid 1px;
 }
 
-.friend{
+.friend {
     display: flex;
     justify-content: center;
     text-align: left;
     font-size: 20px;
     margin-bottom: 15px;
 
-    img{
+    img {
         width: 130px;
         height: 130px;
     }
 }
 
-.friendComment{
+.friendComment {
     color: #651608;
     margin-left: 30px;
     line-height: 30px;
 
-    .txtBold{
+    .txtBold {
         font-weight: bold;
         font-size: 12px;
     }
 
-    .commentTxt{
+    .commentTxt {
         display: flex;
         margin-top: 10px;
-        p{
+
+        p {
             font-size: 12px;
             background: #FF9A42;
             width: 80px;
@@ -104,7 +117,7 @@ main{
     }
 }
 
-.friendWrap a{
+.friendWrap a {
     text-decoration: none;
     color: #651608;
     font-size: 14px;
@@ -113,7 +126,7 @@ main{
     margin-right: 40px;
 }
 
-.inviteBtn{
+.inviteBtn {
     font-size: 16px;
     color: #A65610;
     background: #fff;
@@ -129,11 +142,10 @@ main{
 
 
 
-
-
-footer{
+footer {
     position: fixed;
     bottom: 0px;
+    left: 0px;
     background: #FFD35B;
     display: flex;
     height: 100px;
@@ -141,12 +153,14 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    img{
+
+    img {
         width: 50px;
         height: 50px;
     }
 }
-footer a:last-child img{
+
+footer a:last-child img {
     width: 45px;
     height: 40px;
 }

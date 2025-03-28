@@ -5,12 +5,11 @@ html {
 body {
     background: #FFF4D9;
     font-family: "Zen Maru Gothic", serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #651608;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -24,6 +23,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
 header h1 {
@@ -37,6 +40,7 @@ header p {
     transform: translateX(-50%);
     margin: 0;
     font-size: 24px;
+    font-weight: bold;
 }
 
 /*-------- main ----------*/
@@ -45,8 +49,9 @@ main {
     background: #fff;
     width: 85%;
     border: 2px solid #FF9A42;
-    margin: 30px auto 0;
+    margin: 108px auto 110px;
     padding: 0 30px;
+
 }
 
 .recordWrap {
@@ -61,7 +66,8 @@ main {
     width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
     margin-bottom: 20px;
     border: #BBBBBB 1px solid;
     border-radius: 3px;
@@ -86,16 +92,17 @@ input, textarea {
 .recordText {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 
 .recordText p {
-    margin-right: 10px; 
-    width: 60px; 
+    margin-right: 10px;
+    width: 60px;
 }
 
-input, textarea {
+input,
+textarea {
     margin-bottom: 0;
     border: #BBBBBB 1px solid;
     border-radius: 3px;
@@ -108,7 +115,7 @@ input, textarea {
     border: #BBBBBB 1px solid;
     border-radius: 3px;
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -119,7 +126,7 @@ input, textarea {
     width: 220px;
     height: 35px;
     display: block;
-    margin: 0 auto  15px;
+    margin: 0 auto 15px;
 }
 
 /*-------- footer ----------*/
@@ -131,12 +138,18 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 footer img {
     width: 50px;
     height: 50px;
 }
+
 footer a:last-child img {
     width: 45px;
     height: 40px;
