@@ -9,12 +9,16 @@ body {
     width: 390px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #FFF4D9;
+    color: #651608;
 }
 
 header {
     background: #FFD35B;
     width: 100%;
     height: 70px;
+    top: 0px;
+    left: 0px;
     color: #fff;
     text-align: center;
     display: flex;
@@ -130,7 +134,11 @@ li {
         right: 8px;
         width: 45px;
         height: 45px;
-        background: url(../img/character1.png) no-repeat center center/contain;
+        background: url(../img/character3.png) no-repeat center center/contain;
+    }
+
+    .images.normal::after {
+        background: url(../img/character2.png) no-repeat center center/contain;
     }
 
     h3 {
