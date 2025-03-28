@@ -5,11 +5,116 @@ html {
 body {
     height: 100svh;
     font-family: "Zen Maru Gothic", serif;
-    background-color: #FFF4D9;
     width: 390px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .1s ease-out;
+    z-index: 9;
+}
+
+.modalContainer::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.modalContainer.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modalBody {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.modalClose {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 14px;
+    color: #fff;
+    background: #FF9A42;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.modalContent {
+    background: #fff;
+    border: 2px solid #FF9A42;
+    border-radius: 10px;
+    text-align: left;
+    padding: 30px;
+    font-size: 18px;
+
+    h3 {
+        font-weight: bold;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .info {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .place {
+        margin-right: 20px;
+        background: url(../img/location_on.png) no-repeat left center/20px 20px;
+        padding-left: 25px;
+    }
+
+    .date {
+        background: url(../img/schedule.png) no-repeat left center/20px 20px;
+        padding-left: 25px;
+    }
+
+    .who {
+        background: url(../img/account_circle.png) no-repeat left center/20px 20px;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .comment {
+        background: url(../img/chat_bubble.png) no-repeat left top 5px/20px 20px;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        background-color: #FF9A42;
+        text-align: center;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #fff;
+    }
+}
+
 
 header {
     background: #FFD35B;
@@ -39,45 +144,34 @@ header p {
 }
 
 main {
-    padding-bottom: 110px;
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-
-    .inner {
-        margin: 0 20px;
     padding-top: 108px;
     padding-bottom: 110px;
     background-color: #FFF4D9;
+
+    .inner {
+        margin: 0 20px;
+    }
 }
 
-.select {
-    display: flex;
-    justify-content: space-around;
+.friendSelect {
     padding-bottom: 16px;
     border-bottom: #B7B7B7 2px solid;
     margin-bottom: 20px;
+    text-align: center;
 
-    button {
-        font-size: 20px;
+    select {
+        font-size: 15px;
         font-weight: bold;
-        width: 124px;
+        width: 197px;
         padding: 14px 0;
         border-radius: 50px;
-        background-color: #fff;
-        color: #FF9A42;
-        border: #FF9A42 2px solid;
-    }
-
-    button.active {
         color: #fff;
         background-color: #FF9A42;
-    }
-
-    button.active {
-        background-color: #fff;
-        color: #FF9A42;
-        border: #FF9A42 2px solid;
+        text-align: center;
+        background-image: url(../img/friendIcon.png), url(../img/Polygon2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 15px center, right 25px center;
+        background-size: 30px 30px, 10px 10px;
     }
 }
 
@@ -113,24 +207,18 @@ li {
     img {
         width: 100px;
         aspect-ratio: 1/1;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 5px;
-        margin-right: 30px;
+    }
+
+    img.under {
+        transform: translateY(-100px);
     }
 
     .images {
-        position: relative;
-    }
-
-    .images::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -10px;
-        right: 8px;
-        width: 45px;
-        height: 45px;
-        background: url(../img/character1.png) no-repeat center center/contain;
+        height: 100px;
+        width: 100px;
+        margin-right: 30px;
     }
 
     h3 {
@@ -179,6 +267,7 @@ li {
         }
 
     }
+
 }
 
 

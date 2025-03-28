@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,12 +21,11 @@
     <main>
         <div class="inner">
             <div class="select">
-                <a href="#"><button class="active">自分</button></a>
-                <a href="log-friend.html"><button>フレンド</button></a>
+                <a href="log.html"><button>自分</button></a>
+                <a href="#"><button class="active">フレンド</button></a>
             </div>
 
             <div class="sort">
-
                 <!-- <label for="orderSelect">表示順</label> -->
                 <select name="order" id="orderSelect">
                     <option value="new">新しい順</option>
@@ -35,14 +35,14 @@
 
             <ul>
                 <li>
-                    <img src="./img/misokastu.jpg" alt="">
+                    <div class="images"><img src="./img/misokastu.jpg" alt=""></div>
                     <div class="text">
                         <h3>矢場とん</h3>
                         <div class="info">
                             <p class="place">名古屋</p>
                             <p class="date">3/23</p>
                         </div>
-                        <p class="who">ふじたあいりと</p>
+                        <p class="who">ふじたあいり</p>
                         <p class="comment">味噌カツが美味しい！駅から近くて便利！</p>
                     </div>
                     <div class="favorite">
@@ -51,14 +51,14 @@
                 </li>
 
                 <li>
-                    <img src="./img/ra-men.jpeg" alt="">
+                    <div class="images"><img src="./img/ra-men.jpeg" alt=""></div>
                     <div class="text">
                         <h3>55ラーメン</h3>
                         <div class="info">
                             <p class="place">名古屋</p>
                             <p class="date">3/14</p>
                         </div>
-                        <p class="who">かなやかいせいと</p>
+                        <p class="who">かなやかいせい</p>
                         <p class="comment">ガッツリラーメンが最高。にんにくになれる。</p>
                     </div>
                     <div class="favorite">
@@ -67,14 +67,14 @@
                 </li>
 
                 <li>
-                    <img src="./img/kishimn.jpeg" alt="">
+                    <div class="images"><img src="./img/kishimn.jpeg" alt=""></div>
                     <div class="text">
                         <h3>驛釜きしめん</h3>
                         <div class="info">
                             <p class="place">名古屋</p>
                             <p class="date">3/1</p>
                         </div>
-                        <p class="who">ふじたあいりと</p>
+                        <p class="who">ふじたあいり</p>
                         <p class="comment">量が多い。温玉は正義。</p>
                     </div>
                     <div class="favorite">
@@ -83,16 +83,17 @@
                 </li>
 
             </ul>
-
         </div>
     </main>
 
     <footer>
         <a href="friendList.html"><img src="img/friendIcon.png" alt="フレンドアイコン"></a>
         <a href="index.html"><img src="img/homeIcon.png" alt="ホームアイコン"></a>
-        <a href="log.html"><img src="img/logIcon.png" alt="ログアイコン"></a>
+        <a href="log.html"><img src="img/log-active.png" alt="ログアイコン"></a>
     </footer>
-    <script src="log.js"></script>
+
+    <script src="friendList.js"></script>
+
 </body>
 
 </html>
